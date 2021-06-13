@@ -182,4 +182,109 @@ _82=[f for f in fs if F.size(f)==0]                                     # 82
 _83=F.size(_[3])                                                        # 83 
 F.size(_[3])==0                                                         # 84 
 #get_ipython().run_line_magic('ll', '')                                 # 85 
-#ipy.save(_i79)                                                         # 86 
+#_86=ipy.save(_i79)                                                     # 86 
+#get_ipython().system('git add -A;git commit -m markdown')              # 87 
+#get_ipython().system('git push https://github.com/QGB/lww-photos master')  # 88 
+#get_ipython().system('git push https://github.com/QGB/lww-photos master -f')  # 89 
+_90=dnfs={}
+dnt={}
+dna={}
+U.cdt()
+for nf, f in enumerate(fs):
+    a,e=f.split('/gallery/')
+    n=T.sub(e,'/','/')
+    if not n or not f.startswith('./') or not T.sub(f,'/s/'):
+        print(nf,f)
+        continue   
+    size=F.size(U.gst+f)
+    if not size:
+        print(0,F.move(f,'/home/leanengine/zero/')    )
+        continue
+    #a=T.sub(f,n+'/') #.../gallery/27715/
+    #dna[f]=a
+    if n not in dnt:dnt[n]=''
+    dnt[n]+='`{0}`\n![image]({0})'.format(f[1:])
+    
+    U.dict_value_set(dnfs,n,f)
+    
+sumr=''''# lww-photos
+林文文 出道至今的高清写真套图共22部，写真持续更新中～，敬请期待～  
+<hr>
+'''
+for ni, n in enumerate(dnt):
+    ft=F.write(U.gst+n+'.md',dnt[n])
+    print(ni,ft)
+    sumr+='#### [{0}.{1}]({1})\n\n'.format(ni,'/%s.md'%n)
+    
+F.write(U.gst+'README.md',sumr)                                         # 90 
+_91=dnfs={}
+dnt={}
+dna={}
+U.cdt()
+for nf, f in enumerate(fs):
+    a,e=f.split('/gallery/')
+    n=T.sub(e,'/','/')
+    if not n or not f.startswith('./') or not T.sub(f,'/s/'):
+        print(nf,f)
+        continue   
+    size=F.size(U.gst+f)
+    if not size:
+        print(0,F.move(f,'/home/leanengine/zero/')    )
+        continue
+    #a=T.sub(f,n+'/') #.../gallery/27715/
+    #dna[f]=a
+    if n not in dnt:dnt[n]=''
+    dnt[n]+='`{0}`\n![image]({0})'.format(f[1:])
+    
+    U.dict_value_set(dnfs,n,f)
+    
+sumr=''''# lww-photos
+林文文 出道至今的高清写真套图共22部，写真持续更新中～，敬请期待～  
+<hr>
+
+
+'''
+for ni, n in enumerate(dnt):
+    ft=F.write(U.gst+n+'.md',dnt[n])
+    print(ni,ft)
+    sumr+='#### [{0}.{1}]({1})\n\n'.format(ni,'/%s.md'%n)
+    
+F.write(U.gst+'README.md',sumr)                                         # 91 
+#get_ipython().system('git add -A;git commit -m markdown')              # 92 
+#get_ipython().system('git push https://github.com/QGB/lww-photos master -f')  # 93 
+#get_ipython().system('git push https://gitee.com/qgbcs/lww-photos')    # 94 
+#get_ipython().system('git push https://gitee.com/qgbcs/lww-photos master')  # 95 
+_96=dnfs={}
+dnt={}
+dna={}
+U.cdt()
+for nf, f in enumerate(fs):
+    a,e=f.split('/gallery/')
+    n=T.sub(e,'/','/')
+    if not n or not f.startswith('./') or not T.sub(f,'/s/'):
+        print(nf,f)
+        continue   
+    size=F.size(U.gst+f)
+    if not size:
+        print(0,F.move(f,'/home/leanengine/zero/')    )
+        continue
+    #a=T.sub(f,n+'/') #.../gallery/27715/
+    #dna[f]=a
+    if n not in dnt:dnt[n]=''
+    dnt[n]+='`{0}`\n![image]({0})'.format(f[1:])
+    
+    U.dict_value_set(dnfs,n,f)
+    
+sumr=''''lww-photos
+林文文 出道至今的高清写真套图共22部，写真持续更新中～，敬请期待～  
+<hr>
+
+
+'''
+for ni, n in enumerate(dnt):
+    ft=F.write(U.gst+n+'.md',dnt[n])
+    print(ni,ft)
+    sumr+='#### [{0}.{1}]({1})\n\n'.format(ni,'/%s.md'%n)
+    
+F.write(U.gst+'README.md',sumr)                                         # 96 
+#ipy.save(_i79)                                                         # 97 
