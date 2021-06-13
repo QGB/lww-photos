@@ -436,4 +436,10 @@ _72=_[0]                                                                # 72
 f=_                                                                     # 73 
 #get_ipython().system('vim {repr(f)}')                                  # 74 
 #get_ipython().system('vi {repr(f)}')                                   # 75 
-#ipy.save()                                                             # 76 
+#_76=ipy.save()                                                         # 76 
+#get_ipython().system('vi {repr(f)}')                                   # 77 
+#get_ipython().system('git init')                                       # 78 
+#get_ipython().system('git add -A;git commit -m init')                  # 79 
+#get_ipython().system('git config --global user.email "you@example.com";git config --global user.name "Your Name"')  # 80 
+#get_ipython().system('git add -A;git commit -m init')                  # 81 
+#ipy.save()                                                             # 82 
